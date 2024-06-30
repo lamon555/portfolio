@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(20, 59, 44) 0%, rgb(20, 59, 44) 62%,rgb(72, 77, 92) 62%, rgb(72, 77, 92) 69%,rgb(124, 94, 140) 69%, rgb(124, 94, 140) 76%,rgb(176, 112, 188) 76%, rgb(176, 112, 188) 88%,rgb(228, 129, 236) 88%, rgb(228, 129, 236) 100%);
+    margin: 0;
+}
+h1{
+    margin-bottom: 700px; 
+    margin-left: 10px;
+    font-size: 80px;
+    background-image: repeating-linear-gradient(112.5deg, hsla(241,0%,57%,0.2) 0px, hsla(241,0%,57%,0.2) 0px,transparent 0px, transparent 1px,hsla(241,0%,57%,0.2) 1px, hsla(241,0%,57%,0.2) 4px,transparent 4px, transparent 5px,hsla(241,0%,57%,0.2) 5px, hsla(241,0%,57%,0.2) 8px),repeating-linear-gradient(22.5deg, hsla(241,0%,57%,0.2) 0px, hsla(241,0%,57%,0.2) 0px,transparent 0px, transparent 1px,hsla(241,0%,57%,0.2) 1px, hsla(241,0%,57%,0.2) 4px,transparent 4px, transparent 5px,hsla(241,0%,57%,0.2) 5px, hsla(241,0%,57%,0.2) 8px),linear-gradient(90deg, rgb(47, 47, 47),rgb(184, 184, 184));
+background-repeat: no-repeat;
+background-repeat: repeat;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.clock {
+    position: relative;
+    left : 200px ;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.center {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.hour {
+    height: 6px;
+    background: black;
+}
+
+.minute {
+    height: 6px;
+    background: black;
+}
+
+.second {
+    height: 4px;
+    background: red;
+}
+
+.numbers {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.twelve { top: 10px; left: 50%; transform: translateX(-50%); }
+.one { top: 30px; right: 70px; transform: translateX(-50%); }
+.two { top: 75px; right: 30px; transform: translateX(-50%); }
+.three { right: 20px; top: 50%; transform: translateY(-50%); }
+.four { bottom: 75px; right: 20px; transform: translateX(-50%); }
+.five { bottom: 30px; right: 70px; transform: translateX(-50%); }
+.six { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.seven { bottom: 30px; left: 80px; transform: translateX(-50%); }
+.eight { bottom: 75px; left: 30px; transform: translateX(-50%); }
+.nine { left: 10px; top: 50%; transform: translateY(-50%); }
+.ten { top: 75px; left: 40px; transform: translateX(-50%); }
+.eleven { top: 30px; left: 80px; transform: translateX(-50%); }

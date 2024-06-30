@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.base {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1504333638930-c8787321eee0?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.earth {
+  position: absolute;
+  top: 25rem;
+  left: 15rem;
+  width: 30rem;
+}
+
+.rocket {
+  position: absolute;
+  top: 23rem; /* Adjusted starting position to align with the Earth */
+  left: 22rem; /* Adjusted starting position to align with the Earth */
+  transform: translateX(-50%) rotate(180deg);
+  transition: all 0.3s;
+  animation-name: flying;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  z-index: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.rocket:hover {
+  transform: translateX(-50%) scale(1) rotate(0deg);
+}
+
+.moon {
+  position: absolute;
+  top: 10rem; /* Adjusted position to match the final landing of the rocket */
+  left: 65rem; /* Adjusted position to match the final landing of the rocket */
+  width: 20rem; /* Adjusted size for better visibility */
+  z-index: 0;
+}
+
+@keyframes flying {
+  0% {
+    top: 23rem; /* Adjusted starting position */
+    left: 22rem; /* Adjusted starting position */
+  }
+  60% {
+    top: 8rem; /* Intermediate position */
+    left: 60rem; /* Adjusted for shorter distance */
+  }
+  95% {
+    top: 8rem; /* Just above the moon */
+    left: 65rem; /* Aligned with the moon */
+  }
+  100% {
+    top: 9rem; /* Adjusted position to land from the fire part */
+    left: 65rem; /* Aligned with the moon */
+    transform: translateX(-50%) rotate(0deg); /* Adjusted transform for landing straight */
+  }
+}

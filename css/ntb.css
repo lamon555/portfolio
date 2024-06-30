@@ -1,0 +1,115 @@
+    
+img{
+    width: 100vw;
+    height: 94vh;
+}
+.btn-outline-success{
+    width:200px; 
+    height: 50px;
+}
+.ntb{
+    width:100px;
+     height:60px;
+}
+.heading{
+   font-family: cursive;
+   font-size: 90px;
+   color: grey;
+}
+.heading:hover{
+font-family: cursive;
+color: white;
+}
+.container{
+    background-image: url(../assets/alex-siale-qH36EgNjPJY-unsplash.jpg);
+    margin: 0%;
+    padding: 0%
+}
+.sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sub-heading{
+color: white;
+border: 2px solid white;
+border-radius: 15px;
+padding: 3px;
+}
+.sub{
+    text-decoration: none;
+}
+.sub-heading:hover{
+    color: black;
+    background-color: grey;
+}
+.image{
+   max-width: 400PX; 
+    max-height: 250PX;
+    /* position: relative;
+    left: 810px;
+    float: right; */
+}
+.card-img-top{
+    height: 200px;
+}
+.third-container{
+    max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+}
+.fourth-container{
+    display: flex; 
+gap: 20px;
+flex-wrap: wrap;
+align-items: center;
+}
+.card{
+    width: 16rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.fifth-container{
+    background-image: url(../assets/back.jpg);
+    margin-top: 20px;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin-top: 15px;
+}
+.food-card{
+    width: 18rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.food-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card-body{
+    background-color: white;
+}
+.card-title-food{
+    text-align: center;
+    padding: 5px;
+}.sixth-container{
+    background-image: url(../assets/backg.jpg);
+    margin-top: 20px;
+}
+.card-container-festival{
+    color: black;
+    text-align: center;
+    display: flex;
+    gap: 300px;
+}

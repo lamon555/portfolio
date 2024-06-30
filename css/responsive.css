@@ -1,0 +1,43 @@
+.navbar{
+    background-color: white;
+    color: black;
+}
+.sub-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-brand{
+    color: black;
+}
+.bord{
+    color: black;
+}
+.bord:hover{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: black;
+color: white;
+}
+.form-control{
+   max-width: 1420px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.container{
+    margin-top: 30px;
+}
+col{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.col:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}

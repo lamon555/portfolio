@@ -1,0 +1,79 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part{
+    display: flex;
+    align-items: center;
+}
+#mic{
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: grey;
+    position: absolute;
+    left: 1180px;
+    top: 28px;
+}
+.box{
+    height: 20px;
+    width: 600px;
+    padding: 5px 0px 5px 20px;
+    position: relative;
+    border-radius: 20px;
+
+}
+.search{
+position: absolute;
+left: 1120px;
+top: 30px;
+}
+a{
+text-decoration: none;
+color: black;
+/* display: flex; */
+}
+a:hover{
+    color: purple;
+}
+.third{
+justify-content: space-between;
+}
+aside{
+float: left;
+margin-right: 3%;
+}
+.youtube{
+    display: flex;
+    row-gap: 20px ;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+.wii{
+margin-left: 5%;
+
+}
+.pic{
+border: 3px solid grey;
+border-radius: 20px;
+}
+.pic-2{
+border: 2px solid black;
+border-radius: 15px;
+}
+.logo{
+display: flex; 
+}
+.body{
+    display: flex;
+}
+.text{
+margin-left: 10px;
+}
+h4{
+    margin: 0%;
+}
+.par{
+margin: 0%;
+}
